@@ -1,0 +1,30 @@
+footer {
+    background-color: #E0FAF8;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    & > * {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .brand {
+        h2 {
+            color: #43D4C8;
+            font-size: 27px;
+        }
+        img {
+            height: 50%;
+        }
+    }
+
+    .socials {
+        img {
+            height: 40%;
+        }
+    }
+}
