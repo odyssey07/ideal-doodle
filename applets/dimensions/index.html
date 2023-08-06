@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {margin: 0; padding: 0; font-family: "Segoe UI"; color: white;}
+        body {background-color: #141414; height: 100vh;}
+        .wrapper {height: 100%; display: grid; justify-content: center; align-items: center;}
+        .content {margin-bottom: 20vh;}
+        .content h2 {
+            margin-bottom: 50px;
+            font-size: 72px;
+            font-weight: normal;
+        }
+        .width, .height {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 24px;
+            background-color: #202020;
+            padding: 10px 30px;
+            box-shadow: 2px 2px 6px rgb(16, 16, 16);
+        }
+        .span {display: flex}
+        .width > span:first-child, .height > span:first-child {
+            display: block;
+            /* width: 60px; */
+            /* background-color: red; */
+        }
+        /* p span span {
+            color:aqua;
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h2>Viewport Dimensions</h2>
+            <p class="width"><span>Width</span> <span></span></p>
+            <p class="height"><span>Height</span> <span></span></p>
+        </div>
+    </div>
+    <script>
+        const widthEl = document.querySelector('.width span:nth-child(2)');
+        const heightEl = document.querySelector('.height span:nth-child(2)');
+
+        widthEl.innerHTML = `${window.innerWidth}<span>px</span>`;
+        heightEl.innerHTML = `${window.innerHeight}<span>px</span>`;
+    </script>
+</body>
+</html>
