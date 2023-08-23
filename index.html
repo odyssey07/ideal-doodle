@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ideal Doodle</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <style>
+        * {margin: 0; padding: 0; color: white; font-family: "Segoe UI"; font-weight: normal;}
+        body {
+            background-color: #191919;
+            /* display: grid; place-items: center; */
+            /* min-height: 100vh; */
+            padding: 40px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.6rem;
+        }
+        a {
+            font-size: 1.3rem;
+            text-decoration: none;
+            display: block;
+            margin-bottom: .6rem;
+        }
+        a:hover {
+            color:rgb(144, 255, 255);
+            text-shadow: 1px 1px 4px rgb(144, 255, 255);
+        }
+        .container {
+            /* background-color: green; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
 </head>
 <body>
-    <a href="Full Websites/Curaceutica/index.html">Curaceutica</a>
-    <a href="Full Websites/Reach/index.html">Reach</a>
+    <div class="container">
+        <div class="websites">
+            <h2>Websites</h2>
+            <a href="websites/curaceutica/index.html">Curaceutica</a>
+            <a href="websites/reach/index.html">Reach</a>
+        </div>
+        <div class="lil-apps">
+            <h2>Lil Apps</h2>
+            <a href="lil-apps/dimensions/index.html">Dimensions</a>
+        </div>
+    </div>
 </body>
 </html>
